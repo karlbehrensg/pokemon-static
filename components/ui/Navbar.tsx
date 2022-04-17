@@ -41,7 +41,11 @@ export const Navbar = () => {
         }}
       />
 
-      <Text color="white">Favoritos</Text>
+      <NextLink href="/favorites" passHref>
+        <Link>
+          <Text color="white">Favoritos</Text>
+        </Link>
+      </NextLink>
     </div>
   );
 };
